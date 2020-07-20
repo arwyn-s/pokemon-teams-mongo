@@ -24,9 +24,9 @@ litecur = liteconn.execute('''
     INNER JOIN types ON pokemon_types.type_id=types.id ;''')
 for row in litecur:
     if row[1] == 1:
-        result = all_pokemon.update_one({'pokedex_id': row[0]},{"$set" :{"types":{"primary": row[2]}}})
+        result = all_pokemon.update_one({'pokedex_id': row[0]},{"$set" :{"types.primary": row[2]}})
     else :
-        result = all_pokemon.update_one({'pokedex_id': row[0]},{"$set" :{"types":{"secondary": row[2]}}})
+        result = all_pokemon.update_one({'pokedex_id': row[0]},{"$set" :{"types.secondary": row[2]}})
 
     pprint.pprint(result)
 

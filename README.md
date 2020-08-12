@@ -1,6 +1,7 @@
 # POKEMON-TEAMS DATABASES.
 
-This is a local database creator for the downloaded pokemon database.
+This is a local database creator for the downloaded pokemon database.  
+Download database from veekun.com or [direct Link](https://veekun.com/static/pokedex/downloads/veekun-pokedex.sqlite.gz) 
 
 ### Tools
 
